@@ -1,0 +1,31 @@
+-- See https://wiki.hypr.land/configuring/core/rules/ for more
+-- See https://wiki.hypr.land/configuring/core/rules/workspace-rules/ for workspace rules
+
+-- Example windowrule
+-- hl.window_rule({
+--     name  = "float-kitty",
+--     match = { class = "^(kitty)$", title = "^(kitty)$" },
+--     float = true,
+-- })
+
+-- Ignore maximize requests from apps. You'll probably like this.
+-- Fix some dragging issues with XWayland
+
+-- NOTE: Comment out due to latest upgrade. Need to figuire out why first?
+-- hl.window_rule({
+--     name  = "suppress-maximize-events",
+--     match = { class = ".*" },
+--     suppress_event = "maximize",
+-- })
+-- hl.window_rule({
+--     name  = "fix-xwayland-drags",
+--     match = {
+--         class      = "^$",
+--         title      = "^$",
+--         xwayland   = true,
+--         float      = true,
+--         fullscreen = false,
+--         pin        = false,
+--     },
+--     no_focus = true,
+-- })
