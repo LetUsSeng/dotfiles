@@ -156,11 +156,12 @@ return {
           },
         },
 
-        zls = {},
+        -- zls = {},
         bashls = {},
         clangd = {},
         tofu_ls = {},
         tflint = {},
+        ansiblels = {},
 
         lua_ls = {
           -- cmd = { ... },
